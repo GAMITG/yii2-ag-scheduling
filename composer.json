@@ -1,0 +1,37 @@
+{
+    "name": "gamitg/yii2-ag-scheduling",
+    "description": "This extension is a variation of the yii2-scheduling extension of Yii2. It has simply the same code with a few modification with supported to PHP8. Thanks to 'yii2-scheduling (Developed by: omnilight) extension'.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii" ,"extension","scheduling extension","ag-scheduling","gamitg scheduling", "scheduling", "cron", "cron scheduling"],
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "gamitg",
+            "email": "gamitg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4.0",
+        "yiisoft/yii2": "2.0.*",
+        "symfony/process": "2.6.* || 3.* || 4.* || 5.* || 6.* || 7.*",
+        "dragonmantank/cron-expression": "3.*"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Required to use the thenPing method on schedules (~5.0)."
+    },
+    "autoload": {
+        "psr-4": {
+            "gamitg\\scheduling\\": "src"
+        }
+    },
+    "extra": {
+        "bootstrap": "gamitg\\scheduling\\Bootstrap"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
